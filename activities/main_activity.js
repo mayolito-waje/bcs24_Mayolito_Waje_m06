@@ -15,7 +15,7 @@ oddEvenChecker('25');
 
 function budgetChecker(num) {
   if (typeof num !== 'number') {
-    print('Please pass a number argument');
+    console.log('Please pass a number argument');
     return;
   }
 
@@ -23,3 +23,7 @@ function budgetChecker(num) {
     ? console.log('You are over the budget')
     : console.log('You have resources left');
 }
+
+budgetChecker(45000);
+budgetChecker(36400);
+budgetChecker('not a number');
